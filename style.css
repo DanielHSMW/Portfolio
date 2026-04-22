@@ -9,17 +9,10 @@
 html { background-color: #080f1a; overscroll-behavior-y: none; }
 
 body {
-    background-color: #080f1a;
+    background: linear-gradient(180deg, #0f0c20 0%, #0d0d0f 40%, #080f1a 100%);
     color: var(--text-primary); font-family: var(--font-main); line-height: 1.6;
     overflow-x: hidden; position: relative; -webkit-font-smoothing: antialiased;
     min-height: 100vh; min-height: 100dvh; overscroll-behavior-y: none;
-}
-
-/* Fixed Gradient Background to prevent mobile tearing bug */
-body::after {
-    content: ""; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; height: 100dvh;
-    background: linear-gradient(135deg, #0f0c20 0%, #0d0d0f 50%, #080f1a 100%);
-    z-index: -2; pointer-events: none;
 }
 
 /* Subtle Grunge Noise */
