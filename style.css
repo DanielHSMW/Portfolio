@@ -6,13 +6,19 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { background-color: #080f1a; overscroll-behavior-y: none; }
+html { background-color: #080f1a; }
 
 body {
-    background: linear-gradient(180deg, #0f0c20 0%, #0d0d0f 40%, #080f1a 100%);
+    background-color: #080f1a;
     color: var(--text-primary); font-family: var(--font-main); line-height: 1.6;
-    overflow-x: hidden; position: relative; -webkit-font-smoothing: antialiased;
-    min-height: 100vh; min-height: 100dvh; overscroll-behavior-y: none;
+    position: relative; -webkit-font-smoothing: antialiased;
+    overscroll-behavior-y: none;
+}
+
+.site-wrapper {
+    background: linear-gradient(180deg, #0f0c20 0%, #0d0d0f 40%, #080f1a 100%);
+    width: 100%; overflow-x: hidden; min-height: 100vh; min-height: 100dvh; position: relative;
+    display: flex; flex-direction: column;
 }
 
 /* Subtle Grunge Noise */
