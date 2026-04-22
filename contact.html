@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Daniel Weimann</title>
+    <meta name="description" content="Contact Daniel Weimann - Creative Technologist">
     <meta name="theme-color" content="#080f1a">
+    <meta name="color-scheme" content="dark">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -33,31 +35,35 @@
     <div class="blob blob-1"></div>
     <div class="blob blob-2"></div>
 
-    <main class="container" style="margin-top: 5rem;">
-        <div class="contact-card glass-panel">
-            <h1 class="contact-title">Let's Talk</h1>
-            <form action="https://formsubmit.co/danielweimann18@gmail.com" method="POST" class="contact-form">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_next" value="#">
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-card glass-panel">
+                    <h1 class="contact-title">Let's Talk</h1>
+                    <form action="https://formsubmit.co/danielweimann18@gmail.com" method="POST" class="contact-form">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="#">
 
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" class="form-input" required placeholder="Dein Name">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required placeholder="Dein Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required
+                                placeholder="deine@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" name="message" rows="5" class="form-input" required
+                                placeholder="Lass uns zusammenarbeiten..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn" style="margin-top: 1rem;">Nachricht Senden</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" class="form-input" required
-                        placeholder="deine@email.com">
-                </div>
-                <div class="form-group">
-                    <label for="message">Nachricht</label>
-                    <textarea id="message" name="message" rows="5" class="form-input" required
-                        placeholder="Lass uns zusammenarbeiten..."></textarea>
-                </div>
-                <button type="submit" class="submit-btn" style="margin-top: 1rem;">Nachricht Senden</button>
-            </form>
-        </div>
+            </div>
+        </section>
     </main>
 
     <script src="script.js"></script>
