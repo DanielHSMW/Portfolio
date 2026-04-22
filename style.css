@@ -62,7 +62,7 @@ h1, h2, h3 { font-weight: 800; letter-spacing: -0.02em; }
 .hero { min-height: 100vh; min-height: 100dvh; display: flex; align-items: center; justify-content: center; text-align: center; }
 .hero-content { display: flex; flex-direction: column; align-items: center; gap: 1.5rem; }
 .profile-container { display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
-.profile-placeholder { width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, var(--glass-bg), rgba(255,255,255,0.05)); border: 2px solid var(--glass-border); }
+.profile-placeholder { width: 100px; height: 100px; flex-shrink: 0; border-radius: 50%; background: linear-gradient(135deg, var(--glass-bg), rgba(255,255,255,0.05)); border: 2px solid var(--glass-border); }
 .profile-name { font-size: 1.1rem; font-weight: 600; color: var(--text-secondary); letter-spacing: 0.1em; text-transform: uppercase; }
 .hero-title { font-size: clamp(3rem, 8vw, 6.5rem); line-height: 1.25; padding-bottom: 0.1em; background: linear-gradient(135deg, #ffffff 10%, #b026ff 60%, #ff2a6d 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .hero-subtitle { font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--text-secondary); max-width: 600px; font-weight: 300; }
