@@ -6,12 +6,13 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { background-color: #080f1a; }
+html { background-color: #080f1a; overscroll-behavior-y: none; }
 
 body {
     background: linear-gradient(135deg, #0f0c20 0%, #0d0d0f 50%, #080f1a 100%); background-attachment: fixed;
     color: var(--text-primary); font-family: var(--font-main); line-height: 1.6;
     overflow-x: hidden; position: relative; -webkit-font-smoothing: antialiased;
+    min-height: 100vh; overscroll-behavior-y: none;
 }
 
 /* Subtle Grunge Noise */
