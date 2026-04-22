@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Daniel Weimann</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="min-height: 100vh; display: flex; flex-direction: column; justify-content: center;">
+    
+    <!-- Navigation -->
+    <header class="header">
+        <div class="logo">DW.</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <main class="container" style="margin-top: 5rem;">
+        <div class="contact-card glass-panel" style="animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(30px);">
+            <h1 class="section-title" style="margin-bottom: 2rem; font-size: clamp(2rem, 4vw, 2.5rem); text-align: left; background: linear-gradient(135deg, #ffffff 10%, var(--accent) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Let's Talk</h1>
+            <form action="https://formsubmit.co/danielweimann18@gmail.com" method="POST" class="contact-form">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="#">
+                
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="Dein Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder="deine@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea id="message" name="message" rows="5" class="form-input" required placeholder="Lass uns zusammenarbeiten..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn" style="margin-top: 1rem;">Nachricht Senden</button>
+            </form>
+        </div>
+    </main>
+
+    <style>
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>
