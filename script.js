@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initParallaxBlobs();
     initNavigation();
     initVideoPlayer();
+    initArbeitsbereiche();
 });
 
 /* ==========================================================================
@@ -239,5 +240,42 @@ function initVideoVolume(video) {
             if (volumeIcon) volumeIcon.style.display = 'block';
             if (mutedIcon) mutedIcon.style.display = 'none';
         }
+    });
+}
+
+/* ==========================================================================
+   ARBEITSBEREICHE (Interactive Cards)
+   ========================================================================== */
+function initArbeitsbereiche() {
+    const interactiveCards = document.querySelectorAll('.interactive-card');
+    
+    interactiveCards.forEach(card => {
+        // Clicking the card opens details
+        card.addEventListener('click', function(e) {
+            // Ignore clicks on links or the back button
+            if (e.target.closest('.back-btn') || e.target.closest('.detail-link')) {
+                return;
+            }
+            this.classList.add('show-details');
+        });
+
+        // Clicking the back button closes details
+        const backBtn = card.querySelector('.back-btn');
+        if (backBtn) {
+            backBtn.addEventListener('click', function(e) {
+                e.stopPropagation(); // prevent opening again
+                card.classList.remove('show-details');
+            });
+        }
+        
+        // Handle keyboard accessibility
+        card.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                if (!e.target.closest('.back-btn') && !e.target.closest('.detail-link')) {
+                    e.preventDefault();
+                    this.classList.add('show-details');
+                }
+            }
+        });
     });
 }
