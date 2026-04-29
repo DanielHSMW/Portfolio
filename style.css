@@ -782,6 +782,14 @@ textarea.form-input {
     aspect-ratio: 16 / 9;
 }
 
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 900px;
+}
+
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
@@ -805,5 +813,10 @@ textarea.form-input {
     .video-16-9-half {
         width: 100%;
         max-width: 100%;
+    }
+    
+    .screenshot-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
 }
