@@ -4,6 +4,12 @@
  * um die Wartbarkeit und Lesbarkeit zu maximieren.
  */
 document.addEventListener('DOMContentLoaded', () => {
+    // Prevent jump on refresh
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     initScrollAnimations();
     initParallaxBlobs();
     initNavigation();
