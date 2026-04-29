@@ -776,6 +776,12 @@ textarea.form-input {
     aspect-ratio: 9 / 16;
 }
 
+.video-16-9-half {
+    flex: 1;
+    max-width: 450px;
+    aspect-ratio: 16 / 9;
+}
+
 /* ==========================================================================
    MEDIA QUERIES
    ========================================================================== */
@@ -795,7 +801,8 @@ textarea.form-input {
         gap: 2rem;
     }
     
-    .video-9-16 {
+    .video-9-16,
+    .video-16-9-half {
         width: 100%;
         max-width: 100%;
     }

@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=1.2">
+    <link rel="stylesheet" href="style.css?v=1.13">
 </head>
 
 <body class="centered-layout">
@@ -34,16 +34,44 @@
     <div class="blob blob-2"></div>
 
     <main>
-        <section class="contact-section">
-            <div class="container" style="text-align: center;">
-                <h1 class="section-title">Coming Soon</h1>
-                <p style="color: var(--text-secondary); margin-bottom: 2rem;">Diese Detailseite befindet sich aktuell im Aufbau.</p>
-                <a href="index.html#projects" class="submit-btn" style="text-decoration: none; display: inline-block; width: auto; padding: 1rem 2rem;">Zurück zur Übersicht</a>
+        <section class="detail-hero">
+            <h1 class="detail-title">Commercial Video,<br>Brand Content & Imagefilme</h1>
+            <p class="detail-subtitle">Vom cineastischen Filmtrailer bis zum hochwertigen Corporate Video: Ich verbinde klassisches filmisches Storytelling mit moderner Postproduktion, um Geschichten und Marken visuell auf den Punkt zu bringen.</p>
+        </section>
+
+        <section class="video-showcase">
+            <!-- 16:9 Filmtrailer Placeholder -->
+            <div class="video-placeholder video-16-9">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                </svg>
+                <span>Filmtrailer (16:9)</span>
             </div>
+
+            <!-- Two 16:9 Half Placeholders -->
+            <div class="shorts-container">
+                <div class="video-placeholder video-16-9-half">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                    <span>Corporate Video / Brand Content (16:9)</span>
+                </div>
+                <div class="video-placeholder video-16-9-half">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                    </svg>
+                    <span>B2B Imagefilme (16:9)</span>
+                </div>
+            </div>
+
+            <a href="index.html#projects" class="submit-btn" style="text-decoration: none; display: inline-block; width: auto; padding: 1rem 3rem; margin-top: 2rem;">Zurück zur Übersicht</a>
         </section>
     </main>
 
-    <script src="script.js?v=1.2"></script>
+    <script src="script.js?v=1.13"></script>
 </body>
 
 </html>
