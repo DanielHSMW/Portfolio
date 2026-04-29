@@ -624,7 +624,27 @@ h1, h2, h3 {
     z-index: 5;
 }
 
-/* State changes when .show-details is added */
+/* State changes via Hover (Desktop) or Class (Mobile) */
+@media (hover: hover) {
+    .interactive-card:hover .card-front {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+    }
+
+    .interactive-card:hover .card-details {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+    
+    /* Hide back button on desktop since hover handles the exit */
+    .back-btn {
+        display: none;
+    }
+}
+
+/* Fallback for Touch Devices */
 .interactive-card.show-details .card-front {
     opacity: 0;
     pointer-events: none;
