@@ -624,27 +624,20 @@ h1, h2, h3 {
     z-index: 5;
 }
 
-/* State changes via Hover (Desktop) or Class (Mobile) */
-@media (hover: hover) {
-    .interactive-card:hover .card-front {
-        opacity: 0;
-        pointer-events: none;
-        transform: translateY(-10px);
-    }
-
-    .interactive-card:hover .card-details {
-        opacity: 1;
-        pointer-events: auto;
-        transform: translateY(0);
-    }
-    
-    /* Hide back button on desktop since hover handles the exit */
-    .back-btn {
-        display: none;
-    }
+/* State changes via Hover (Desktop) */
+.interactive-card:hover .card-front {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
 }
 
-/* Fallback for Touch Devices */
+.interactive-card:hover .card-details {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* Fallback for Touch Devices via JS click */
 .interactive-card.show-details .card-front {
     opacity: 0;
     pointer-events: none;
