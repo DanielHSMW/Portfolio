@@ -123,14 +123,17 @@ h1, h2, h3 {
     letter-spacing: -0.02em;
 }
 
+.section-title, .hero-title, .contact-title, .detail-title {
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .section-title {
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 3.5rem;
     text-align: center;
     background: linear-gradient(135deg, #ffffff 0%, #9ca3af 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* ==========================================================================
@@ -170,12 +173,15 @@ h1, h2, h3 {
     z-index: 1002;
 }
 
+.menu-toggle .bar, .nav-link, .submit-btn, .footer-links a, .video-placeholder, .form-input, .detail-link {
+    transition: all 0.3s ease;
+}
+
 .menu-toggle .bar {
     height: 2px;
     width: 100%;
     background-color: var(--text-primary);
     border-radius: 2px;
-    transition: all 0.3s ease;
 }
 
 .menu-toggle.is-active .bar:nth-child(1) {
@@ -228,7 +234,6 @@ h1, h2, h3 {
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
-    transition: color 0.3s;
 }
 
 .nav-link:hover {
@@ -306,9 +311,6 @@ h1, h2, h3 {
     line-height: 1.25;
     padding-bottom: 0.1em;
     background: linear-gradient(135deg, #ffffff 10%, #b026ff 60%, #ff2a6d 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .hero-subtitle {
@@ -324,9 +326,6 @@ h1, h2, h3 {
     font-size: clamp(2rem, 4vw, 2.5rem);
     text-align: left;
     background: linear-gradient(135deg, #ffffff 10%, var(--accent) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .scroll-indicator {
@@ -540,7 +539,6 @@ h1, h2, h3 {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--glass-border);
     border-radius: 12px;
-    transition: all 0.3s ease;
     font-weight: 400;
 }
 
@@ -616,7 +614,6 @@ h1, h2, h3 {
     font-family: var(--font-main);
     font-size: 1rem;
     outline: none;
-    transition: all 0.3s ease;
 }
 
 .form-input:focus {
@@ -640,7 +637,6 @@ textarea.form-input {
     font-weight: 600;
     font-size: 1rem;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
 .submit-btn:hover {
@@ -685,7 +681,6 @@ textarea.form-input {
     text-decoration: none;
     font-size: 0.95rem;
     font-weight: 400;
-    transition: color 0.2s ease;
 }
 
 .footer-links a:hover {
@@ -708,8 +703,6 @@ textarea.form-input {
     font-weight: 800;
     margin-bottom: 1.5rem;
     background: linear-gradient(90deg, #fff, #a0a0a0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     line-height: 1.1;
     letter-spacing: -0.02em;
 }
@@ -743,7 +736,6 @@ textarea.form-input {
     font-weight: 600;
     font-size: 1.2rem;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
 }
 
 .video-placeholder:hover {
