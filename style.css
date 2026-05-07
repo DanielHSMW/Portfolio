@@ -570,6 +570,9 @@ h1, h2, h3 {
 .projects-grid.show .project-card:nth-child(3) {
     transition-delay: 0.4s;
 }
+.projects-grid.show .project-card:nth-child(4) {
+    transition-delay: 0.55s;
+}
 
 /* ==========================================================================
    CONTACT FORMS
